@@ -1,5 +1,5 @@
 :root {
-    --top-and-bottom-color: rgb(226, 226, 226);
+    --top-and-bottom-color: rgb(240, 240, 240);
     --submit-button-color: #596D48;
 }
 
@@ -17,6 +17,12 @@ img {
     margin-bottom: -4px;
 }
 
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
 .sign-up-box {
     display: flex;
     flex-direction: column;
@@ -28,6 +34,7 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: white;
+    box-shadow: 0px 5px 5px gray;
 }
 
 .before-form-button, .button-container {
@@ -77,7 +84,16 @@ img {
 
 input {
     width: 300px;
-    height: 20px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border-color: gray;
+    border-style: solid;
+}
+
+input:focus {
+    border-color: rgb(27, 128, 229);
+    box-shadow: 2px 2px 10px rgb(9, 76, 142);
 }
 
 .button-container {
@@ -95,6 +111,14 @@ button {
     font-weight: 700;
 }
 
+button:hover {
+    background-color: #495d38;
+}
+
+button:active {
+    box-shadow: 2px 2px 10px #2b3721;
+}
+
 .footer-text {
     padding-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -104,4 +128,8 @@ button {
     text-decoration: none;
     color: var(--submit-button-color);
     font-weight: bold;
+}
+
+.footer-text > span > a:active {
+    text-shadow: 2px 2px 4px #2b3721;
 }
