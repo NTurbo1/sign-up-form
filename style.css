@@ -1,0 +1,107 @@
+:root {
+    --top-and-bottom-color: rgb(226, 226, 226);
+    --submit-button-color: #596D48;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+img {
+    height: 100vh;
+    margin-bottom: -4px;
+}
+
+.sign-up-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--top-and-bottom-color);
+}
+
+.before-form-button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.before-form-button, .button-container {
+    padding-left: 60px;
+    padding-right: 100px;
+}
+
+.before-form-button > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.sign-up-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-text {
+    padding-bottom: 50px;
+}
+
+.intro-text, .footer-text {
+    padding-left: 60px;
+    padding-right: 300px;
+}
+
+.intro-text > p {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-surname-input, .email-phone-input, .password-input {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.label-paragraph {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+}
+
+.button-container {
+    padding-top: 30px;
+}
+
+button {
+    background-color: var(--submit-button-color);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.footer-text {
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-text > span > a {
+    text-decoration: none;
+    color: var(--submit-button-color);
+    font-weight: bold;
+}
